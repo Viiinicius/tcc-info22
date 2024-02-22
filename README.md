@@ -23,4 +23,12 @@ Imagem
 Código (entre crases)
 `print("hello")`
 
+Link
+[Site do IFC](https://ifc.edu.br/)
 
+Tabela
+
+Número|Nome|Nota
+-|-|-
+1|Tiago|5.0
+2|Patrick|10.0
