@@ -23,4 +23,4 @@ Imagem
 Código (entre crases)
 `print("hello")`
 
-gay
+
