@@ -79,9 +79,6 @@
     
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    
- 
-    
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
@@ -150,10 +147,8 @@
     margin: 0 0 35px 0;
     background: #18202D;
     border: 1px solid black;
-    
     -webkit-box-shadow: 5px;
     border-radius: 5px;
-    
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: both;
