@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+body {
+    font-family: "Diplomata SC", serif;
+    background-color: #18202D;
+}
+
+#perfil{
+    background-color: #A9322A;
+    float: left;
+    width: 6em;
+    height: 6em;
+    border-color: #FDF6D5;
+    border-radius: 4em;
+}
+
+h1 {
+    text-align: right;
+    padding-right: 1em;
+    font-size: 3em;
+    color: #FDF6D5;
+}
+
+.hr{
+    background-color: #FDF6D5;
+    border-width: 0; 
+	height: 0.2em;
+	border-top-width: 1px;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 2em;
+    color: #FDF6D5;
+}
+
+#addExercicio{
+    background-color: #A9322A;
+    float: right;
+    width: 3em;
+    height: 3em;
+    border-color: #FDF6D5;
+    
+}
