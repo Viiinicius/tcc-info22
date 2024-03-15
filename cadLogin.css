@@ -1,3 +1,6 @@
+:root {
+  --corLetras: #FDF6D5;
+}
 
 *, *:before, *:after { 
     margin:0;
@@ -7,6 +10,7 @@
   
   body{
     margin:10px;
+    background-color: rgb(189, 189, 189);
   }
   
   a{
@@ -16,6 +20,10 @@
   /* esconde as ancoras da tela */
   a.links{
     display: none;
+  }
+
+  a#manterLogado {
+    color: var(--corLetras);
   }
   
   /* content que contem os formulários */
@@ -98,16 +106,13 @@
     -webkit-border-radius: 5px;
     border-radius: 5px;
     
-    transition: all 0.2s linear;
   }
  
-  
   /*marcando os links para mudar de um formulário para outro */
   .link{
     position: absolute;
     color: #FDF6D5;
     left: 0px;
-    height: 20px;
     width: 440px;
     padding: 17px 30px 20px 30px;
     font-size: 16px;
@@ -131,90 +136,29 @@
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s  linear;
   }
-  .link a:hover {
-    color: black;
-    background: black;
-    border: 1px solid black;
-  }
   
   /* estilos para para ambos os formulários */
   #cadastro, 
   #login{
     position: absolute;
     top: 0px;
-    width: 88%; 
+    width: 88%;
+    min-height: 420px; 
     padding: 18px 6% 60px 6%;
     margin: 0 0 35px 0;
     background: #18202D;
     border: 1px solid black;
     -webkit-box-shadow: 5px;
     border-radius: 5px;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-  
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
+
+  }
+
+  #paracadastro:target ~ .content #cadastro {
+    z-index: 3;
   }
   
-  #paracadastro:target ~ .content #cadastro,
-  #paralogin:target ~ .content #login{
+   .content #login{
     z-index: 2;
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-  
-    -webkit-animation-delay: .1s;
-    animation-delay: .1s;
-  }
-  #registro:target ~ .content #login,
-  #paralogin:target ~ .content #cadastro{
-    -webkit-animation-name: fadeOutLeft;
-    animation-name: fadeOutLeft;
+   
   }
   
-  /*fadeInLeft*/
-  @-webkit-keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-    }
-  }
-  
-  @keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  /*fadeOutLeft*/
-  @-webkit-keyframes fadeOutLeft {
-    0% {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateX(-20px);
-    }
-  }
-  
-  @keyframes fadeOutLeft {
-    0% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-  }

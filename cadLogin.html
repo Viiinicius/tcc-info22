@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Modelo.css">
+  <title>Teste</title>
+</head>
+
+<body>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+
+    <div class="content">
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action="" autocomplete="on">
+          <h1>Login</h1>
+          <p>
+            <label for="email_login">E-mail</label>
+            <input id="email_login" name="email" required="required" type="text"
+              placeholder="Digite seu E-mail" autocomplete=""/>
+          </p>
+
+          <p>
+            <label for="senha_login">Senha</label>
+            <input id="senha_login" name="password" autocomplete="current-password" required="required" type="number" step="10" placeholder="Digite sua senha"/>
+          </p>
+
+          <p>
+            <a href="" id="manterLogado">Esqueceu sua senha?</a>
+          </p>
+
+          <p>
+            <input type="submit" value="Logar" />
+          </p>
+
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action="">
+          <h1>Cadastro</h1>
+
+          <p>
+            <label for="nome_cad">Nome de Usuario</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text"
+              placeholder="Digite o nome de Usuario" />
+          </p>
+
+          <p>
+            <label for="email_cad">E-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Digite seu E-mail" />
+          </p>
+
+          <p>
+            <label for="senha_cad">Senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Digite sua Senha" />
+          </p>
+
+          <p>
+            <input type="submit" value="Cadastrar" />
+          </p>
+
+          <p class="link">
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+        <script>
+          function Logar() {
+            var email_login = document.getElementById('email_login').value;
+            var senha_login = document.getElementById('senha_login').value;
+
+            if (email_login == 'admin ' && senha_login == 'admin') {
+              alert('sucesso');
+            }
+
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
