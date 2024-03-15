@@ -1,4 +1,17 @@
-h1{
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+body {
+    font-family: "Diplomata SC", serif;
+    background-color: aliceblue;
+}
+
+h1 {
+
     text-align: right;
-    font-family: ;
+    font-size: 3em;
+}
+
+h2 {
+    text-align: left;
+    padding: 3em;
 }
