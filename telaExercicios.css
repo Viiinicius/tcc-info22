@@ -40,5 +40,22 @@ h2 {
     width: 3em;
     height: 3em;
     border-color: #FDF6D5;
-    
+}
+
+#nomeexercicio{
+    font-family: "Diplomata SC", serif;
+    font-size: 1.5em;
+    color: #FDF6D5;
+    background-color: #18202D;
+    border: 0em;
+}
+
+ul li::marker{
+    font-size: 3em;
+    color: #A9322A;
+}
+
+ul{
+    display: flex;
+    align-items: center;
 }

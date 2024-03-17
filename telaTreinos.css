@@ -10,7 +10,7 @@ body {
     float: left;
     width: 6em;
     height: 6em;
-    color: #FDF6D5;
+    border-color: #FDF6D5;
     border-radius: 4em;
 }
 
@@ -21,9 +21,11 @@ h1 {
     color: #FDF6D5;
 }
 
-hr{
+.hr{
     background-color: #FDF6D5;
-    border-width: 0.2em;
+    border-width: 0;
+    height: 0.2em;
+    border-top-width: 1px;
 }
 
 h2 {
@@ -37,5 +39,23 @@ h2 {
     float: right;
     width: 3em;
     height: 3em;
+    border-color: #FDF6D5;
+}
+
+#nometreino{
+    font-family: "Diplomata SC", serif;
+    font-size: 1.5em;
     color: #FDF6D5;
+    background-color: #18202D;
+    border: 0em;
+}
+
+ul li::marker{
+    font-size: 3em;
+    color: #A9322A;
+}
+
+ul{
+    display: flex;
+    align-items: center;
 }
