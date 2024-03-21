@@ -19,6 +19,13 @@ header {
     align-items: center;
 }
 
+#link-logo {
+    width: 20%;
+}
+
+#logo-header {
+width: 100%;
+}
 #perfil{
     background-color: #A9322A;
     width: 6em;
