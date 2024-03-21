@@ -23,15 +23,8 @@ header {
     width: 20%;
 }
 
-#logo-header {
-width: 100%;
-}
-#perfil{
-    background-color: #A9322A;
-    width: 6em;
-    height: 6em;
-    border-color: #FDF6D5;
-    border-radius: 4em;
+#imagen-logo {
+width: 5em;
 }
 
 h1 {
@@ -63,6 +56,7 @@ h2 {
 #addexercicio{
     background-color: #A9322A;
     padding: 1em;
+    border-radius: 4em;
   
 }
 
@@ -85,5 +79,17 @@ ul{
     display: flex;
     align-items: center;
     padding-left: 4em;
-    
 }
+
+#tabela-cargas h2{
+    color: #FDF6D5;
+    font-size: 0.8em;
+}
+
+#tabela-cargas{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5em;
+}
+
