@@ -9,76 +9,81 @@
 </head>
 
 <body>
-  <div class="container">
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
+  <form>
+    <div class="container">
+      <a class="links" id="paracadastro"></a>
+      <a class="links" id="paralogin"></a>
 
-    <div class="content">
-      <!--FORMULÁRIO DE CADASTRO-->
-      <div id="cadastro">
-        <form method="post" action="">
-          <h1>Cadastro</h1>
+      <div class="content">
+        <!--FORMULÁRIO DE CADASTRO-->
+        <div id="cadastro">
+          <form method="post" action="">
+            <h1>Cadastro</h1>
 
-          <p>
-            <label for="nome_cad">Nome de Usuario</label>
-            <input id="nome_cad" name="nome_cad" required="required" type="text"
-              placeholder="Digite o nome de Usuario" />
-          </p>
+            <p>
+              <label for="nome_cad">Nome de Usuario</label>
+              <input id="nome_cad" name="nome_cad" required="required" type="text"
+                placeholder="Digite o nome de Usuario" />
+            </p>
 
-          <p>
-            <label for="email_cad">E-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Digite seu E-mail" />
-          </p>
+            <p>
+              <label for="email_cad">E-mail</label>
+              <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Digite seu E-mail" />
+            </p>
 
-          <p>
-            <label for="senha_cad">Senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Digite sua Senha" />
-          </p>
+            <p>
+              <label for="senha_cad">Senha</label>
+              <input id="senha_cad" name="senha_cad" required="required" type="password"
+                placeholder="Digite sua Senha" />
+            </p>
 
-          <p>
-            <input type="submit" value="Cadastrar" />
-          </p>
+            <p>
+              <input type="submit" value="Cadastrar"  />
+            </p>
 
-          <p class="link">
-            Já tem conta?
-            <a href="#paralogin"> Ir para Login </a>
-          </p>
-        </form>
-      </div>
+            <p class="link">
+              Já tem conta?
+              <a href="#paralogin"> Ir para Login </a>
+            </p>
+          </form>
+        </div>
 
-      <!--FORMULÁRIO DE LOGIN-->
-      <div id="login">
-        <form method="post" action="" autocomplete="on">
-          <h1>Login</h1>
-          <p>
-            <label for="email_login">E-mail</label>
-            <input id="email_login" name="email" required="required" type="text" placeholder="Digite seu E-mail"
-              autocomplete="" />
-          </p>
+        <!--FORMULÁRIO DE LOGIN-->
+        <div id="login">
+          <form method="post" action="" autocomplete="on">
+            <h1>Login</h1>
+            <p>
+              <label for="email_login">E-mail</label>
+              <input id="email_login" name="email" required="required" type="text" placeholder="Digite seu E-mail"
+                autocomplete="" />
+            </p>
 
-          <p>
-            <label for="senha_login">Senha</label>
-            <input id="senha_login" name="password" autocomplete="current-password" required="required" type="password"
-              placeholder="Digite sua senha" />
-          </p>
+            <p>
+              <label for="senha_login">Senha</label>
+              <input id="senha_login" name="password" autocomplete="current-password" required="required"
+                type="password" placeholder="Digite sua senha" />
+            </p>
 
-          <p>
-            <a href="" id="manterLogado">Esqueceu sua senha?</a>
-          </p>
+            <p>
+              <a href="" id="manterLogado" onclick="recoverPassword()">Esqueceu sua senha?</a>
+            </p>
 
-          <p>
-            <input type="submit" value="Logar" />
-          </p>
+            <p>
+              <input type="submit" value="Logar" />
+            </p>
 
-          <p class="link">
-            Ainda não tem conta?
-            <a href="#paracadastro">Cadastre-se</a>
-          </p>
-        </form>
+            <p class="link">
+              Ainda não tem conta?
+              <a href="#paracadastro"> Ir para Cadastro</a>
+            </p>
+          </form>
+
+        </div>
       </div>
     </div>
-  </div>
-  <script src="telaExercicios.js"></script>
+    <script src="telaCadLogin.js"></script>
+  </form>
 </body>
 
 </html>
+http://127.0.0.1:5500/telaCadLogin.html
