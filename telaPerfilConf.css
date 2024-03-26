@@ -5,7 +5,7 @@ body {
     background-color: #18202D;
 }
 
-#voltar{
+#voltar {
     background-color: #A9322A;
     float: left;
     width: 6em;
@@ -21,7 +21,7 @@ h1 {
     color: #FDF6D5;
 }
 
-.conf{
+.conf {
     text-align: left;
     padding-right: 1em;
     font-size: 1.5em;
@@ -29,7 +29,7 @@ h1 {
 
 }
 
-.hr{
+.hr {
     background-color: #FDF6D5;
     border-width: 0;
     height: 0.2em;
@@ -42,7 +42,7 @@ h2 {
     color: #FDF6D5;
 }
 
-#addTreino{
+#addTreino {
     background-color: #A9322A;
     float: right;
     width: 3em;
@@ -50,7 +50,7 @@ h2 {
     border-color: #FDF6D5;
 }
 
-#alteracao{
+#alteracao {
     font-family: "Diplomata SC", serif;
     font-size: 1.5em;
     color: #FDF6D5;
@@ -58,12 +58,12 @@ h2 {
     border: 0em;
 }
 
-ul li::marker{
+ul li::marker {
     font-size: 3em;
     color: #A9322A;
 }
 
-ul{
+ul {
     display: flex;
     align-items: center;
 }
