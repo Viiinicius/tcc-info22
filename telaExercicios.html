@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="telaExercicios.css">
     <title>Tela Exercícios</title>
 </head>
-<body>   
+
+<body>
     <header>
         <a href="telaPerfilConf.html" id="link-logo">
             <img src="diplomata-sc/Logou.jpg" alt="Tela Perfil" id="imagen-logo">
@@ -21,25 +23,25 @@
         <button id="addexercicio"></button>
     </div>
 
-    <hr class="hr">
-<table class="tabela">
-    <thead>
-        <tr>
-            <th>Séries</th>
-        </tr>
-    </thead>
-</table>
-    <div id="tabela-cargas">
-        <h2>Séries</h2>
-        <h2>Reps</h2>
-        <h2>Carga</h2>
-    </div>
-
+    <table>
+        <tbody>
+            <tr>
+                <th>Séries</th>
+                <th>Reps</th>
+                <th>Cargas</th>
+            </tr>
+            <td> <input id="elementotabela"type="number" min="0" step="5" autocomplete="off" /> </td>
+            <td><input id="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
+            <td><input id="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
+        </tbody>
+    </table>
     <ul id="novoexercicio">
         <li>
-            <input id="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício" autocomplete="off" />
+            <input id="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício"
+                autocomplete="off" />
         </li>
     </ul>
-   
+
 </body>
+
 </html>

@@ -24,7 +24,7 @@ header {
 }
 
 #imagen-logo {
-width: 5em;
+    width: 5em;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
     color: #FDF6D5;
 }
 
-.hr{
+.hr {
     background-color: #FDF6D5;
     border-width: 0;
     height: 0.2em;
@@ -53,14 +53,14 @@ h2 {
     align-items: center;
 }
 
-#addexercicio{
+#addexercicio {
     background-color: #A9322A;
     padding: 1em;
     border-radius: 4em;
-  
+
 }
 
-#nomeexercicio{
+#nomeexercicio {
     font-family: "Diplomata SC", serif;
     font-size: 1.5em;
     color: #FDF6D5;
@@ -68,27 +68,60 @@ h2 {
     border: 0em;
 }
 
-ul li::marker{
+ul li::marker {
     padding: 2em;
     border: 2px solid white;
     font-size: 3em;
     color: #A9322A;
 }
 
-ul{
+ul {
     display: flex;
     align-items: center;
     padding-left: 4em;
 }
 
-#tabela-cargas h2{
+#tabela-cargas h2 {
     color: #FDF6D5;
     font-size: 0.8em;
 }
 
-#tabela-cargas{
+#tabela-cargas {
     display: flex;
     justify-content: end;
     align-items: center;
     padding-right: 5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-right: 1em;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color:#A9322A;
+    color: #FDF6D5;
+}
+
+tr {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #18202D;
+
+}
+
+tr,
+td {
+    text-align: center;
 }
