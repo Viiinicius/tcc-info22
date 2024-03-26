@@ -65,7 +65,7 @@ h2 {
     font-size: 1.5em;
     color: #FDF6D5;
     background-color: #18202D;
-    border: 0em;
+    border: 0.1em;
 }
 
 ul li::marker {
@@ -110,7 +110,7 @@ td {
 }
 
 th {
-    background-color:#A9322A;
+    background-color: #A9322A;
     color: #FDF6D5;
 }
 
