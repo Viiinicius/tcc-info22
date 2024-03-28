@@ -1,69 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Diplomata SC", serif;
     background-color: #18202D;
 }
 
-#voltar {
-    background-color: #A9322A;
-    float: left;
-    width: 6em;
-    height: 6em;
-    border-color: #FDF6D5;
-    border-radius: 4em;
+header {
+    padding: .4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#link-logo {
+    width: 20%;
+}
+
+#imagen-logo {
+width: 5em;
 }
 
 h1 {
-    text-align: right;
     padding-right: 1em;
     font-size: 3em;
     color: #FDF6D5;
 }
 
-.conf {
-    text-align: left;
-    padding-right: 1em;
-    font-size: 1.5em;
-    color: #A9322A;
-
-}
-
-.hr {
+.hr{
     background-color: #FDF6D5;
     border-width: 0;
     height: 0.2em;
     border-top-width: 1px;
 }
 
-h2 {
-    text-align: left;
-    padding-left: 2em;
-    color: #FDF6D5;
-}
-
-#addTreino {
-    background-color: #A9322A;
-    float: right;
-    width: 3em;
-    height: 3em;
-    border-color: #FDF6D5;
-}
-
-#alteracao {
-    font-family: "Diplomata SC", serif;
-    font-size: 1.5em;
-    color: #FDF6D5;
+.conf {
     background-color: #18202D;
-    border: 0em;
+    font-family: "Diplomata SC", serif;
+    color: #A9322A;
+    font-size: 1em;
+    display: flex;
 }
 
-ul li::marker {
+ul li::marker{
+    padding: 2em;
+    border: 2px solid white;
     font-size: 3em;
     color: #A9322A;
 }
 
-ul {
-    display: flex;
-    align-items: center;
+ul{
+    
+   
+    padding-left: 4em;
+    
 }
+
+
+
+
+
+

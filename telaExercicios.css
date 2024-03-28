@@ -60,7 +60,7 @@ h2 {
     font-size: 4em;
 }
 
-#nomeexercicio {
+.nomeexercicio {
     font-family: "Diplomata SC", serif;
     font-size: 1.5em;
     color: #FDF6D5;
@@ -124,4 +124,10 @@ tr {
 tr,
 td {
     text-align: center;
+}
+
+#tabela-lista-exercicios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
