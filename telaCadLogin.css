@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
 :root {
   --corLetras: #FDF6D5;
 }
@@ -22,7 +23,7 @@
     display: none;
   }
 
-  a#manterLogado {
+  a#esqueceu-sua-senha {
     color: var(--corLetras);
   }
   
@@ -148,7 +149,6 @@
     margin: 0 0 35px 0;
     background: #18202D;
     border: 1px solid black;
-    -webkit-box-shadow: 5px;
     border-radius: 5px;
 
   }

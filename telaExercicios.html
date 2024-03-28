@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+    <!-- Cabeçalho com Titulo e Link para tela de Perfil -->
     <header>
         <a href="telaPerfilConf.html" id="link-logo">
             <img src="diplomata-sc/Logou.jpg" alt="Tela Perfil" id="imagen-logo">
@@ -16,13 +18,20 @@
         <h1>Iron Pump</h1>
     </header>
 
+    <!-- Linha divisória -->
     <hr class="hr">
 
+    <!-- Div com Titulo"Exercícios" e Botão para adicionar Exercícios -->
     <div id="adicionarExercicioContainer">
         <h2>Exercícios</h2>
-        <button id="addexercicio"></button>
+        <button id="addexercicio">+</button>
     </div>
 
+    <!-- Linha Divisória -->
+    <hr class="hr">
+
+    <!-- Tabela com Séries, Repetições e Cargas -->
+    <div id="tabela-lista-exercicios">
     <table>
         <tbody>
             <tr>
@@ -35,12 +44,15 @@
             <td><input id="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
         </tbody>
     </table>
+
+    <!-- Lista com os Exercícios -->
     <ul id="novoexercicio">
         <li>
             <input id="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício"
                 autocomplete="off" />
         </li>
     </ul>
+</div>
 
 </body>
 
