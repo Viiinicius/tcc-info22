@@ -60,12 +60,12 @@ h2 {
     font-size: 4em;
 }
 
-#nometreino{
+.nometreino{
     font-family: "Diplomata SC", serif;
     font-size: 1.5em;
     color: #FDF6D5;
     background-color: #18202D;
-    border: 0em;
+    border: 0.1em;
 }
 
 ul li::marker{
@@ -80,4 +80,16 @@ ul{
     align-items: center;
     padding-left: 4em;
     
+}
+
+#link-tela-exercicio{
+    background-color: #18202D;
+    font-family: "Diplomata SC", serif;
+    color: #A9322A;
+    font-size: 1em;
+}
+
+#lista-treinos-bt-exercicios{
+    display: flex;
+    align-items: center;
 }

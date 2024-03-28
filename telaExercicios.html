@@ -30,8 +30,16 @@
     <!-- Linha Divisória -->
     <hr class="hr">
 
-    <!-- Tabela com Séries, Repetições e Cargas -->
     <div id="tabela-lista-exercicios">
+         <!-- Lista com os Exercícios -->
+    <ul id="novoexercicio">
+        <li>
+            <input class="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício"
+                autocomplete="off" />
+        </li>
+    </ul>
+
+     <!-- Tabela com Séries, Repetições e Cargas -->
     <table>
         <tbody>
             <tr>
@@ -39,19 +47,11 @@
                 <th>Reps</th>
                 <th>Cargas</th>
             </tr>
-            <td> <input id="elementotabela"type="number" min="0" step="5" autocomplete="off" /> </td>
-            <td><input id="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
-            <td><input id="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
+            <td> <input class="elementotabela"type="number" min="0" step="5" autocomplete="off" /> </td>
+            <td><input class="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
+            <td><input class="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
         </tbody>
     </table>
-
-    <!-- Lista com os Exercícios -->
-    <ul id="novoexercicio">
-        <li>
-            <input id="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício"
-                autocomplete="off" />
-        </li>
-    </ul>
 </div>
 
 </body>
