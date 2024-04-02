@@ -66,6 +66,7 @@ h2 {
     color: #FDF6D5;
     background-color: #18202D;
     border: 0.1em;
+    width: 13em;
 }
 
 ul li::marker{
@@ -87,9 +88,14 @@ ul{
     font-family: "Diplomata SC", serif;
     color: #A9322A;
     font-size: 1em;
+    padding-left: 22em;
 }
 
 #lista-treinos-bt-exercicios{
     display: flex;
     align-items: center;
+}
+
+#addtreino{
+    
 }
