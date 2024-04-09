@@ -46,6 +46,7 @@ h1 {
     color: #A9322A;
     font-size: 1em;
     display: flex;
+    
 }
 
 ul li::marker{
@@ -55,11 +56,8 @@ ul li::marker{
     color: #A9322A;
 }
 
-ul{
-    
-   
+ul{ 
     padding-left: 4em;
-    
 }
 
 
