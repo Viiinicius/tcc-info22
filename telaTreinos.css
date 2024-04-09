@@ -58,6 +58,7 @@ h2 {
     padding-right: .3em;
     color: #A9322A;
     font-size: 4em;
+    width: 2em;
 }
 
 .nometreino{
@@ -94,8 +95,4 @@ ul{
 #lista-treinos-bt-exercicios{
     display: flex;
     align-items: center;
-}
-
-#addtreino{
-    
 }

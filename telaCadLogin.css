@@ -156,9 +156,6 @@
   #paracadastro:target ~ .content #cadastro {
     z-index: 3;
   }
-  
    .content #login{
     z-index: 2;
-   
   }
-  
