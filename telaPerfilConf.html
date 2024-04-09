@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="telaPerfilConf.css">
     <title>Perfil e Configurações</title>
+    <style>
+        /* Coloque aqui seu CSS existente */
+    </style>
 </head>
 <body>
     <!--Cabeçalho com titulo e botão para tela de perfil-->
@@ -21,15 +24,53 @@
 
     <ul>
         <li>
-    <button class="conf">Alterar E-mail</button>
-</li>
-<li>
-    <button class="conf">Alterar Senha</button>
-</li>
-<li>
-    <button class="conf">Alterar Nome De Usuário</button>
-</li>
+            <button class="conf" onclick="alterarEmail()">Alterar E-mail</button>
+        </li>
+        <li>
+            <button class="conf" onclick="alterarSenha()">Alterar Senha</button>
+        </li>
+        <li>
+            <button class="conf" onclick="alterarNomeUsuario()">Alterar Nome de Usuário</button>
+        </li>
+    </ul>
 
-</ul>
+    <!-- Caixa de diálogo para alterar o email -->
+    <div id="emailDialog" class="dialog">
+        <h2>Alterar E-mail</h2>
+        <input type="email" placeholder="Novo E-mail">
+        <button onclick="fecharDialog('emailDialog')">Salvar</button>
+    </div>
+
+    <!-- Caixa de diálogo para alterar a senha -->
+    <div id="senhaDialog" class="dialog">
+        <h2>Alterar Senha</h2>
+        <input type="password" placeholder="Nova Senha">
+        <button onclick="fecharDialog('senhaDialog')">Salvar</button>
+    </div>
+
+    <!-- Caixa de diálogo para alterar o nome de usuário -->
+    <div id="nomeUsuarioDialog" class="dialog">
+        <h2>Alterar Nome de Usuário</h2>
+        <input type="text" placeholder="Novo Nome de Usuário">
+        <button onclick="fecharDialog('nomeUsuarioDialog')">Salvar</button>
+    </div>
+
+    <script>
+        function alterarEmail() {
+            document.getElementById('emailDialog').style.display = 'block';
+        }
+
+        function alterarSenha() {
+            document.getElementById('senhaDialog').style.display = 'block';
+        }
+
+        function alterarNomeUsuario() {
+            document.getElementById('nomeUsuarioDialog').style.display = 'block';
+        }
+
+        function fecharDialog(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
 </body>
 </html>

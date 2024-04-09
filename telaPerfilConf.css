@@ -59,6 +59,46 @@ ul li::marker{
 ul{ 
     padding-left: 4em;
 }
+/* Adicione este CSS ao seu arquivo telaPerfilConf.css */
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #18202D; /* Cor de fundo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #FDF6D5; /* Cor do texto */
+}
+
+.dialog h2 {
+    margin-bottom: 10px;
+}
+
+.dialog input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FDF6D5; /* Cor do campo de entrada */
+    color: #18202D; /* Cor do texto no campo de entrada */
+}
+
+.dialog button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A9322A; /* Cor do botão */
+    color: #FDF6D5; /* Cor do texto no botão */
+    cursor: pointer;
+}
+
+.dialog button:hover {
+    background-color: #8A2BE2; /* Cor do botão ao passar o mouse */
+}
 
 
 
