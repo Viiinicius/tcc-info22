@@ -31,28 +31,39 @@
     <hr class="hr">
 
     <div id="tabela-lista-exercicios">
-         <!-- Lista com os Exercícios -->
-    <ul id="novoexercicio">
-        <li>
-            <input class="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício"
-                autocomplete="off" />
-        </li>
-    </ul>
+        <!-- Lista com os Exercícios -->
+        <div id="listaExercicios">
+            <!-- Caixas de Exercícios serão adicionadas aqui -->
+        </div>
 
-     <!-- Tabela com Séries, Repetições e Cargas -->
-    <table>
-        <tbody>
-            <tr>
-                <th>Séries</th>
-                <th>Reps</th>
-                <th>Cargas</th>
-            </tr>
-            <td> <input class="elementotabela"type="number" min="0" step="5" autocomplete="off" /> </td>
-            <td><input class="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
-            <td><input class="elementotabela"type="number" min="0" step="5" autocomplete="off" /></td>
-        </tbody>
-    </table>
-</div>
+        <!-- Tabela com Séries, Repetições e Cargas -->
+        <table>
+            <tbody>
+                <tr>
+                    <th>Séries</th>
+                    <th>Reps</th>
+                    <th>Cargas</th>
+                </tr>
+                <td> <input class="elementotabela" type="number" min="0" step="5" autocomplete="off" /> </td>
+                <td><input class="elementotabela" type="number" min="0" step="5" autocomplete="off" /></td>
+                <td><input class="elementotabela" type="number" min="0" step="5" autocomplete="off" /></td>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('addexercicio').addEventListener('click', function () {
+            var listaExercicios = document.getElementById('listaExercicios');
+            var novoExercicioContainer = document.createElement('div');
+            novoExercicioContainer.classList.add('exercicio-container');
+            novoExercicioContainer.innerHTML = `
+                <div class="bolinha-vermelha"></div>
+                <div class="exercicio-item">
+                    <input class="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício" autocomplete="off" />
+                </div>`;
+            listaExercicios.appendChild(novoExercicioContainer);
+        });
+    </script>
 
 </body>
 
