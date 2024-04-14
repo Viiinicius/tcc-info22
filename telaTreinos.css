@@ -24,7 +24,7 @@ header {
 }
 
 #imagen-logo {
-width: 5em;
+    width: 5em;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
     color: #FDF6D5;
 }
 
-.hr{
+.hr {
     background-color: #FDF6D5;
     border-width: 0;
     height: 0.2em;
@@ -53,7 +53,7 @@ h2 {
     align-items: center;
 }
 
-#addTreino{
+#addTreino {
     background-color: #18202D;
     padding-right: .3em;
     color: #A9322A;
@@ -61,7 +61,7 @@ h2 {
     width: 2em;
 }
 
-.nometreino{
+.nometreino {
     font-family: "Diplomata SC", serif;
     font-size: 1.5em;
     color: #FDF6D5;
@@ -70,21 +70,21 @@ h2 {
     width: 13em;
 }
 
-ul li::marker{
+ul li::marker {
     padding: 2em;
     border: 2px solid white;
     font-size: 3em;
     color: #A9322A;
 }
 
-ul{
+ul {
     display: flex;
     align-items: center;
     padding-left: 4em;
-    
+
 }
 
-#link-tela-exercicio{
+#link-tela-exercicio {
     background-color: #18202D;
     font-family: "Diplomata SC", serif;
     color: #A9322A;
@@ -92,7 +92,7 @@ ul{
     padding-left: 22em;
 }
 
-#lista-treinos-bt-exercicios{
+#lista-treinos-bt-exercicios {
     display: flex;
     align-items: center;
 }
