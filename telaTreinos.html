@@ -21,23 +21,44 @@
     <!--Linha divisória-->
     <hr class="hr">
 
-     <!--Div com titulo"Treino" e Botão para adicionar treino-->
+    <!--Div com titulo"Treino" e Botão para adicionar treino-->
     <div id="adicionarTreinoContainer">
         <h2>Treinos</h2>
-        <button  id="addTreino">+</button>
+        <button id="addTreino">+</button>
     </div>
 
     <!-- Linha divisória -->
     <hr class="hr">
 
     <div id="lista-treinos-bt-exercicios">
-    <!-- Lista com as Treinos e Links para os Exercícios -->
-    <ul id="novotreino">
-        <li>
-            <input class="nometreino" name="nometreino" type="text" placeholder="Novo Treino" autocomplete="off" />
-        </li>
-    </ul>
-   <a href="telaExercicios.html"  id="link-tela-exercicio">Exercicios</a>
-</div>
+        <!-- Lista com as Treinos e Links para os Exercícios -->
+        <ul id="novotreino">
+            <li>
+                <input class="nometreino" name="nometreino" type="text" placeholder="Novo Treino" autocomplete="off" />
+            </li>
+        </ul>
+        <a href="telaExercicios.html" id="link-tela-exercicio">Exercicios</a>
+    </div>
+    <script>
+        document.getElementById('addTreino').addEventListener('click', function() {
+            var novoCampoTreino = document.createElement('li');
+            var novoInputTreino = document.createElement('input');
+
+            novoInputTreino.setAttribute('type', 'text');
+            novoInputTreino.setAttribute('placeholder', 'Novo Treino');
+            novoInputTreino.setAttribute('autocomplete', 'off');
+            novoInputTreino.setAttribute('class', 'nometreino');
+            novoInputTreino.setAttribute('name', 'nometreino');
+
+            // Adiciona uma quebra de linha antes do novo campo de treino
+            var quebraDeLinha = document.createElement('br');
+            document.getElementById('novotreino').appendChild(quebraDeLinha);
+
+            novoCampoTreino.appendChild(novoInputTreino);
+            document.getElementById('novotreino').appendChild(novoCampoTreino);
+        });
+
+    </script>
 </body>
+
 </html>
