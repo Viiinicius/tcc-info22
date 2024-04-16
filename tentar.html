@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telaTreinos.css">
+    <title>Tela Treinos</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com Titulo e Link para tela de Perfil -->
+    <header>
+        <a href="telaPerfilConf.html" id="link-logo">
+            <img src="diplomata-sc/Logou.jpg" alt="Tela Perfil" id="imagen-logo">
+        </a>
+        <h1>Iron Pump</h1>
+    </header>
+
+    <!-- Linha divisória -->
+    <hr class="hr">
+
+    <!-- Div com Titulo"Exercícios" e Botão para adicionar Exercícios -->
+    <div id="adicionarTreinoContainer">
+        <h2>Treinos</h2>
+        <button id="addTreino">+</button>
+    </div>
+
+    <!-- Linha Divisória -->
+    <hr class="hr">
+
+    <div id="listaTreino">
+        <!-- Lista com as Treinos e Links para os Exercícios -->
+    </div>
+    <script>
+        document.getElementById('addTreino').addEventListener('click', function () {
+            var listaTreino= document.getElementById('listaTreino');
+            var novoTreinoContainer = document.createElement('div');
+            novoTreinoContainer.classList.add('treino-container');
+            novoTreinoContainer.innerHTML = `
+            <div class="lista-treinos-bt-exercicios">
+        <ul>
+            <li>
+                <input class="nometreino" name="nometreino" type="text" placeholder="Novo Treino" autocomplete="off" />
+            </li>
+        </ul>
+        <a href="telaExercicios.html"  id="link-tela-exercicio">Exercicios</a>
+        </div>
+       
+                `;
+            listaTreino.appendChild(novoTreinoContainer);
+        });
+    </script>
+</body>
+</html>

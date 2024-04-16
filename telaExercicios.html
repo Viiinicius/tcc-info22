@@ -35,9 +35,20 @@
         <div id="listaExercicios">
             <!-- Caixas de Exercícios serão adicionadas aqui -->
         </div>
+    </div>
+    <script>
+        document.getElementById('addexercicio').addEventListener('click', function () {
+            var listaExercicios = document.getElementById('listaExercicios');
+            var novoExercicioContainer = document.createElement('div');
+            novoExercicioContainer.classList.add('exercicio-container');
+            novoExercicioContainer.innerHTML = `
 
-        <!-- Tabela com Séries, Repetições e Cargas -->
-        <table>
+                <ul>
+                    <li><input class="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício" autocomplete="off" /></li>
+
+                </ul>
+                `;
+            novoExercicioContainer.innerHTML +=  `<table>
             <tbody>
                 <tr>
                     <th>Séries</th>
@@ -48,18 +59,7 @@
                 <td><input class="elementotabela" type="number" min="0" step="5" autocomplete="off" /></td>
                 <td><input class="elementotabela" type="number" min="0" step="5" autocomplete="off" /></td>
             </tbody>
-        </table>
-    </div>
-    <script>
-        document.getElementById('addexercicio').addEventListener('click', function () {
-            var listaExercicios = document.getElementById('listaExercicios');
-            var novoExercicioContainer = document.createElement('div');
-            novoExercicioContainer.classList.add('exercicio-container');
-            novoExercicioContainer.innerHTML = `
-                <div class="bolinha-vermelha"></div>
-                <div class="exercicio-item">
-                    <input class="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício" autocomplete="off" />
-                </div>`;
+        </table>`; 
             listaExercicios.appendChild(novoExercicioContainer);
         });
     </script>
