@@ -24,7 +24,7 @@ header {
 }
 
 #imagen-logo {
-width: 5em;
+    width: 5em;
 }
 
 h1 {
@@ -33,12 +33,11 @@ h1 {
     color: #FDF6D5;
 }
 
-.hr{
+.hr {
     background-color: #FDF6D5;
     border-width: 0;
     height: 0.2em;
     border-top-width: 1px;
-    width: 100%;
 }
 
 h2 {
@@ -47,55 +46,88 @@ h2 {
     color: #FDF6D5;
 }
 
-#adicionarTreinoContainer {
+#adicionarExercicioContainer {
     display: flex;
-    justify-content: space-between;
     padding: .1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    justify-content: space-between;
     align-items: center;
 }
 
-#addTreino{
+#addexercicio {
     background-color: #18202D;
     padding-right: .3em;
     color: #A9322A;
     font-size: 4em;
-    width: 2em;
 }
 
-.nometreino{
+.nomeexercicio {
     font-family: "Diplomata SC", serif;
     font-size: 1.5em;
     color: #FDF6D5;
     background-color: #18202D;
     border: 0.1em;
-    width: 13em;
 }
 
-ul li::marker{
+ul li::marker {
     padding: 2em;
     border: 2px solid white;
     font-size: 3em;
     color: #A9322A;
 }
 
-ul{
+ul {
+    display: flex;
     align-items: center;
-    padding-top: 1em;
     padding-left: 4em;
 }
 
-#link-tela-exercicio{
-    display: flex;
-    background-color: #18202D;
-    font-family: "Diplomata SC", serif;
-    color: #A9322A;
-    font-size: 1em;
-    padding-left: 22em;
+#tabela-cargas h2 {
+    color: #FDF6D5;
+    font-size: 0.8em;
 }
 
-.lista-treinos-bt-exercicios{
+#tabela-cargas {
     display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 2em;
+    display: flex;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #A9322A;
+    color: #FDF6D5;
+}
+
+tr {
+    width: 100%;
+    border: 1px solid black;
+    background-color: #18202D;
+
+}
+
+tr,
+td {
+    text-align: center;
+}
+
+#tabela-lista-exercicios{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }

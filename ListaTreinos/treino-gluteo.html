@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="treino-gluteo.css">
+    <title>Exercícios para Glúteos</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com Titulo e Link para tela de Perfil -->
+    <header>
+        <a href="telaPerfilConf.html" id="link-logo">
+            <img src="diplomata-sc/Logou.jpg" alt="Tela Perfil" id="imagen-logo">
+        </a>
+        <h1>Iron Pump</h1>
+    </header>
+
+    <!-- Linha divisória -->
+    <hr class="hr">
+
+    <!-- Div com Titulo"Exercícios" e Botão para adicionar Exercícios -->
+    <div id="adicionarExercicioContainer">
+        <h2>Exercícios para Glúteos</h2>
+        <button id="addexercicio">+</button>
+    </div>
+
+    <!-- Linha Divisória -->
+    <hr class="hr">
+
+    <div id="tabela-lista-exercicios">
+        <!-- Lista com os Exercícios -->
+        <div id="listaExercicios">
+            <!-- Caixas de Exercícios serão adicionadas aqui -->
+        </div>
+    </div>
+    <script>
+        document.getElementById('addexercicio').addEventListener('click', function () {
+            var listaExercicios = document.getElementById('listaExercicios');
+            var novoExercicioContainer = document.createElement('div');
+            novoExercicioContainer.classList.add('exercicio-container');
+            novoExercicioContainer.innerHTML = `
+
+                <ul>
+                    <li><input class="nomeexercicio" name="nomeexercicio" type="text" placeholder="Novo Exercício" autocomplete="off" /></li>
+
+                </ul>
+                `;
+            novoExercicioContainer.innerHTML +=  `<table>
+            <tbody>
+                <tr>
+                    <th>Séries</th>
+                    <th>Reps</th>
+                    <th>Cargas</th>
+                </tr>
+                <td> <input class="elementotabela" type="number" min="0" step="5" autocomplete="off" /> </td>
+                <td><input class="elementotabela" type="number" min="0" step="5" autocomplete="off" /></td>
+                <td><input class="elementotabela" type="number" min="0" step="5" autocomplete="off" /></td>
+            </tbody>
+        </table>`; 
+            listaExercicios.appendChild(novoExercicioContainer);
+        });
+    </script>
+</body>
+</html>
