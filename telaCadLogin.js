@@ -32,10 +32,10 @@ function recoverPassword() {
     var email = document.getElementById("email_cad").value;
     var senha = document.getElementById("senha_cad").value;
   
-    // Implemente aqui a lógica para cadastrar o usuário com os dados fornecidos
   
     // Exemplo de exibição dos dados cadastrados
     alert("Usuário cadastrado com sucesso!\n\nNome: " + nome + "\nE-mail: " + email);
+    return false;
   }
   
   // Função para login de usuário
@@ -46,10 +46,10 @@ function recoverPassword() {
     var email = document.getElementById("email_login").value;
     var senha = document.getElementById("senha_login").value;
   
-    // Implemente aqui a lógica para verificar o login com os dados fornecidos
-  
     // Exemplo de exibição do login bem-sucedido
     alert("Login realizado com sucesso!\n\nE-mail: " + email);
+
+    return false;
   }
   
   // Adiciona um evento de envio para o formulário de cadastro
