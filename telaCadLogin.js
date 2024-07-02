@@ -40,7 +40,9 @@ function recoverPassword() {
   
   // Função para login de usuário
   function fazerLogin(event) {
-    event.preventDefault(); // Impede que o formulário seja enviado
+
+// Impede que o formulário seja enviado
+    event.preventDefault(); 
   
     // Obtém os valores dos campos de entrada
     var email = document.getElementById("email_login").value;
@@ -53,8 +55,8 @@ function recoverPassword() {
   }
   
   // Adiciona um evento de envio para o formulário de cadastro
-  document.getElementById("cadastro").addEventListener("submit", cadastrarUsuario);
-  
+  document.getElementById("cadastro").addEventListener( cadastrarUsuario);
+
   // Adiciona um evento de envio para o formulário de login
-  document.getElementById("login").addEventListener("submit", fazerLogin);
+  document.getElementById("login").addEventListener( fazerLogin);
   
