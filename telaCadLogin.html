@@ -25,20 +25,20 @@
           <p>
             <label for="nome_cad">Nome de Usuario</label>
             <input id="nome_cad" name="nome_cad" required="required" type="text"
-              placeholder="Digite o nome de Usuario"/>
+              placeholder="Digite o nome de Usuario" />
           </p>
 
           <!--Campo de email cadastro-->
           <p>
             <label for="email_cad">E-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Digite seu E-mail"/>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Digite seu E-mail" />
           </p>
 
           <!--Campo de senha cadastro-->
           <p>
             <label for="senha_cad">Senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password"
-              placeholder="Digite sua Senha" autocomplete="off" />
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Digite sua Senha"
+              autocomplete="off" />
           </p>
 
           <!--Botão cadastrar-->
@@ -55,21 +55,21 @@
       </div>
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action="" autocomplete="off" onsubmit="return fazerLogin(event);">
+        <form method="post" action="" autocomplete="off" onsubmit="return fazerLogin();">
 
           <h1>Login</h1>
 
           <!--Campo de email login-->
           <p>
             <label for="email_login">E-mail</label>
-            <input id="email_login" name="email" required="required" type="text" placeholder="Digite seu E-mail"/>
+            <input id="email_login" name="email" required="required" type="text" placeholder="Digite seu E-mail" />
           </p>
 
           <!--Campo de senha login-->
           <p>
             <label for="senha_login">Senha</label>
-            <input id="senha_login" name="password" required="required"
-              type="password" placeholder="Digite sua senha"/>
+            <input id="senha_login" name="password" required="required" type="password" 
+            placeholder="Digite sua senha" />
           </p>
 
           <!--Esqueceu sua senha-->
@@ -79,7 +79,7 @@
 
           <!--Botão Logar-->
           <p>
-            <input type="submit" value="Logar" />
+            <input type="submit" onclick="fazerLogin" value="Logar" />
           </p>
 
           <!--Link para área de cadastro -->
@@ -92,6 +92,27 @@
     </div>
   </div>
   <script src="telaCadLogin.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCNoWlCu0HOO_rdXLUNm_iVrYlXX8BnjKM",
+      authDomain: "tcc-info22.firebaseapp.com",
+      projectId: "tcc-info22",
+      storageBucket: "tcc-info22.appspot.com",
+      messagingSenderId: "36509194270",
+      appId: "1:36509194270:web:0760b2a134157d6e53760f"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    firebase.auth().signInWithEmailAndPassword(form.email().value, form.password().value).then(Response => {
+
+      window.location.href="telaGruposMusculares.html";
+
+    }).catch(error => {
+      alert(error.code);
+    });
+  </script>
 </body>
 
 </html>

@@ -39,8 +39,9 @@ function recoverPassword() {
   }
   
   // Função para login de usuário
-  function fazerLogin(event) {
-
+  function fazerLogin() {
+    //window.location.href="telaGruposMusculares.html"
+    
 // Impede que o formulário seja enviado
     event.preventDefault(); 
   
@@ -55,7 +56,7 @@ function recoverPassword() {
   }
   
   // Adiciona um evento de envio para o formulário de cadastro
-  document.getElementById("cadastro").addEventListener( cadastrarUsuario);
+  document.getElementById("cadastro").addEventListener(cadastrarUsuario);
 
   // Adiciona um evento de envio para o formulário de login
   document.getElementById("login").addEventListener( fazerLogin);
