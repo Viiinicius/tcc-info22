@@ -40,7 +40,7 @@ function recoverPassword() {
   
   // Função para login de usuário
   function fazerLogin() {
-    //window.location.href="telaGruposMusculares.html"
+    window.location.href="telaGruposMusculares.html"
     
 // Impede que o formulário seja enviado
     event.preventDefault(); 
